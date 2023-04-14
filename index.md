@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-   Shared Chat .account-list { width: 100%; } .flex-list { display: none; flex-wrap: wrap; padding: 0; margin: 0; list-style: none; } .flex-list li { flex: 0 0 calc(100% / 6); box-sizing: border-box; } .flex-list li a { display: flex; align-items: center; justify-content: center; padding: 20px; margin: 10px; border: 1px solid #ccc; text-decoration: none; color: #333; } .flex-list li a:hover { border-color: #999; color: #666; } 
 
 # 本页面中包含一些免费的共享ChatGPT账号
 ![Image of fast.ai logo](images/logo.png)
@@ -50,5 +49,3 @@ layout: default
 *   [1](https://chat-shared.zhile.io/?token=9ea09a25f39d1e209acaae09086522c5)
 *   [18](https://chat-shared.zhile.io/?token=359507e26df4aeac6f6eabc8bfe3a5c3)
 *   [27](https://chat-shared.zhile.io/?token=5d7458cb14750623997f452041998943)
-
-!function () { function shuffle(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() \* (i + 1)); \[array\[i\], array\[j\]\] = \[array\[j\], array\[i\]\]; } } window.addEventListener('load', function () { const list = document.querySelector('ul.flex-list'); const items = Array.from(list.children); shuffle(items); for (const item of items) { list.appendChild(item); } list.style.display = 'flex'; }); }();
