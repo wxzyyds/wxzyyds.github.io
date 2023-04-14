@@ -3,7 +3,7 @@ layout: default
 ---
 
 # 本页面中包含一些免费的共享ChatGPT账号
-![Image of fast.ai logo](images/logo.png)
+(images/logo.png)
 
 ### 感谢以下网友的无私奉献，排名不份先后（[我也要投喂](https://zhile.io/contribute-openai-account)）：
 
