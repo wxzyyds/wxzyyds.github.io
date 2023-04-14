@@ -11,7 +11,7 @@ description: 欢迎来到我的个人博客 ❤
 github_username: 黑色墨染上安详
 
 # Email and twitter are optional:
-email: 18049694099@163.com
+email: waes849562@gmail.com
 twitter_username:
 
 # Set this to true to get LaTeX math equation support
@@ -27,7 +27,7 @@ plugins:
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
-
+  
 titles_from_headings:
   enabled:     true
   strip_title: true
