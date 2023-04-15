@@ -8,9 +8,9 @@ layout: default
 >> *   Moon\_gv
 >> *   world\_peace
 >> *   SpacePig
-<table align="center" >
+<table align="center" style=" text-align: center;">
     <tr>
-        <th colspan = "5" style=" text-align: center;">以下链接每个都代表一个ChatGPT账号，点击即可访问。由于是共享的，遇忙可以选择其他的或等待一会</th>
+        <th colspan = "5" >以下链接每个都代表一个ChatGPT账号，点击即可访问。由于是共享的，遇忙可以选择其他的或等待一会</th>
        
     </tr>
     <tr>
