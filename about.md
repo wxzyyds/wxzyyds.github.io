@@ -1,58 +1,25 @@
-# About
-
-# 数据结构和算法
-## 数据结构
-### 基本概念
-- 数据：描述客观事物的符号，是计算机可以操作的对象
-- 数据元素：数据的基本单位，通常作为一个整体进行考虑和处理
-- 数据项：数据元素的不可分割的最小单位
-- 数据对象：性质相同的数据元素的集合，是数据的一个子集
-- 数据结构：相互之间存在一种或多种特定关系的数据元素的集合
-### 逻辑结构
-- 集合结构：数据元素之间除了同属于一个集合外，没有其他关系
-- 线性结构：数据元素之间存在一对一的线性关系
-- 树形结构：数据元素之间存在一对多的层次关系
-- 图形结构：数据元素之间存在多对多的任意关系
-### 物理结构（存储结构）
-- 顺序存储：数据元素存放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的
-- 链式存储：数据元素存放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的，用指针表示其逻辑关系
-### 基本操作
-- 初始化：建立一个空的数据结构
-- 插入：在指定位置或条件下添加一个新的数据元素
-- 删除：在指定位置或条件下移除一个已有的数据元素
-- 查找：根据给定的值或条件，查找符合要求的数据元素或其位置
-- 修改：改变指定位置或条件下已有数据元素的值或属性
-- 排序：按照某种规则或函数，对数据元素进行重新排列
-### 常用类型
-- 数组：一种顺序存储的线性表，所有元素的类型相同，每个元素占用相同大小的存储单元，通过下标来访问元素
-- 链表：一种链式存储的线性表，每个元素由存储单元和指针域组成，通过指针链接起来，分为单链表、双链表、循环链表等
-- 栈：一种只能在一端进行插入和删除操作的线性表，遵循后进先出（LIFO）原则，可以用顺序存储或链式存储实现
-- 队列：一种只能在一端进行插入操作，在另一端进行删除操作的线性表，遵循先进先出（FIFO）原则，可以用顺序存储或链式存储实现，分为普通队列、循环队列、双端队列等
-- 树：一种非线性结构，由一个根节点和若干个子树组成，每个子树又是一棵树，分为二叉树、平衡二叉树、二叉搜索树、红黑树、B树、B+树等
-- 图：一种非线性结构，由顶点集合和边集合组成，表示多对多的关系，分为有向图、无向图、加权图、连通图等
-- 堆：一种特殊的完全二叉树，满足堆序性质，即父节点的值大于或等于（小于或等于）子节点的值，分为最大堆和最小堆
-- 散列表：一种根据关键码值直接进行访问的数据结构，通过散列函数将关键码值映射到存储位置，解决冲突的方法有开放定址法、链地址法等
-## 算法
-### 基本概念
-- 算法：对特定问题求解步骤的一种描述，它是指令的有限序列，每条指令表示一个或多个操作
-- 算法的特性：有穷性、确定性、可行性、输入、输出
-- 算法设计的目标：正确性、可读性、健壮性、效率与低存储需求
-### 算法效率的度量
-- 时间复杂度：算法执行时间与问题规模之间的关系，用大O表示法表示，如O(1)、O(n)、O(logn)、O(nlogn)、O(n^2)等
-- 空间复杂度：算法执行过程中所需存储空间与问题规模之间的关系，用大O表示法表示，如O(1)、O(n)、O(n^2)等
-- 算法优化的方法：减少重复计算、减少不必要的计算、改进算法逻辑结构等
-### 常用算法
-- 搜索算法：在数据结构中查找特定元素或位置的算法，分为顺序搜索、二分搜索、插值搜索、斐波那契搜索等
-- 排序算法：在数据结构中按照某种规则或函数重新排列元素的算法，分为冒泡排序、选择排序、插入排序、希尔排序、快速排序、归并排序、堆排序、计数排序、桶排序、基数排序等
-- 递归算法：在算法中调用自身的算法，分为直接递归和间接递归，需要注意递归出口和递归效率
-- 分治算法：将一个复杂问题分解成若干个相同或相似的子问题，然后将子问题的解合并得到原问题的解的算法，如二分搜索、归并排序等
-- 动态规划算法：将一个复杂问题分解成若干个重叠的子问题，然后从最简单的子问题开始求解，并将子问题的解保存起来，避免重复计算，最终得到原问题的解的算法，如斐波那契数列、背包问题等
-- 贪心算法：在每一步选择中都采取当前状态下最好或最优的选择，从而希望导致结果是最好或最优的算法，如霍夫曼编码、最小生成树等
-- 回溯算法：在搜索过程中遇到不满足条件的情况时，退回到上一步或若干步重新选择的算法，如八皇后问题、0-1背包问题等
-- 分支限界算法：在搜索过程中利用限界函数剪去不可能得到最优解的子空间的算法，如旅行商问题、0-1背包问题等
-- 字符串匹配算法：在一个长字符串中查找一个短字符串出现的位置的算法，分为朴素匹配、KMP算法、BM算法、RK算法等
-- 数字操作算法：对数字进行各种运算和处理的算法，如进制转换、大数运算、素数判断、最大公约数、最小公倍数等
-- 其他算法：涉及到特定领域或应用场景的算法，如加密解密、压缩解压、编码解码、图形图像处理、机器学习等
-```
-
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(()=>{setTimeout(()=>{const{markmap:Fe,mm:ur}=window,Fr=new Fe.Toolbar;Fr.attach(ur);const Dr=Fr.render();Dr.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(Dr)})})()</script><script>((B,S,M,_)=>{const I=B();window.mm=I.Markmap.create("svg#mindmap",(S||I.deriveOptions)(_),M)})(()=>window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"数据结构和算法","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"数据结构","children":[{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"基本概念","children":[{"type":"list_item","depth":3,"payload":{"lines":[3,4]},"content":"数据：描述客观事物的符号，是计算机可以操作的对象"},{"type":"list_item","depth":3,"payload":{"lines":[4,5]},"content":"数据元素：数据的基本单位，通常作为一个整体进行考虑和处理"},{"type":"list_item","depth":3,"payload":{"lines":[5,6]},"content":"数据项：数据元素的不可分割的最小单位"},{"type":"list_item","depth":3,"payload":{"lines":[6,7]},"content":"数据对象：性质相同的数据元素的集合，是数据的一个子集"},{"type":"list_item","depth":3,"payload":{"lines":[7,8]},"content":"数据结构：相互之间存在一种或多种特定关系的数据元素的集合"}]},{"type":"heading","depth":2,"payload":{"lines":[8,9]},"content":"逻辑结构","children":[{"type":"list_item","depth":3,"payload":{"lines":[9,10]},"content":"集合结构：数据元素之间除了同属于一个集合外，没有其他关系"},{"type":"list_item","depth":3,"payload":{"lines":[10,11]},"content":"线性结构：数据元素之间存在一对一的线性关系"},{"type":"list_item","depth":3,"payload":{"lines":[11,12]},"content":"树形结构：数据元素之间存在一对多的层次关系"},{"type":"list_item","depth":3,"payload":{"lines":[12,13]},"content":"图形结构：数据元素之间存在多对多的任意关系"}]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"物理结构（存储结构）","children":[{"type":"list_item","depth":3,"payload":{"lines":[14,15]},"content":"顺序存储：数据元素存放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的"},{"type":"list_item","depth":3,"payload":{"lines":[15,16]},"content":"链式存储：数据元素存放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的，用指针表示其逻辑关系"}]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"基本操作","children":[{"type":"list_item","depth":3,"payload":{"lines":[17,18]},"content":"初始化：建立一个空的数据结构"},{"type":"list_item","depth":3,"payload":{"lines":[18,19]},"content":"插入：在指定位置或条件下添加一个新的数据元素"},{"type":"list_item","depth":3,"payload":{"lines":[19,20]},"content":"删除：在指定位置或条件下移除一个已有的数据元素"},{"type":"list_item","depth":3,"payload":{"lines":[20,21]},"content":"查找：根据给定的值或条件，查找符合要求的数据元素或其位置"},{"type":"list_item","depth":3,"payload":{"lines":[21,22]},"content":"修改：改变指定位置或条件下已有数据元素的值或属性"},{"type":"list_item","depth":3,"payload":{"lines":[22,23]},"content":"排序：按照某种规则或函数，对数据元素进行重新排列"}]},{"type":"heading","depth":2,"payload":{"lines":[23,24]},"content":"常用类型","children":[{"type":"list_item","depth":3,"payload":{"lines":[24,25]},"content":"数组：一种顺序存储的线性表，所有元素的类型相同，每个元素占用相同大小的存储单元，通过下标来访问元素"},{"type":"list_item","depth":3,"payload":{"lines":[25,26]},"content":"链表：一种链式存储的线性表，每个元素由存储单元和指针域组成，通过指针链接起来，分为单链表、双链表、循环链表等"},{"type":"list_item","depth":3,"payload":{"lines":[26,27]},"content":"栈：一种只能在一端进行插入和删除操作的线性表，遵循后进先出（LIFO）原则，可以用顺序存储或链式存储实现"},{"type":"list_item","depth":3,"payload":{"lines":[27,28]},"content":"队列：一种只能在一端进行插入操作，在另一端进行删除操作的线性表，遵循先进先出（FIFO）原则，可以用顺序存储或链式存储实现，分为普通队列、循环队列、双端队列等"},{"type":"list_item","depth":3,"payload":{"lines":[28,29]},"content":"树：一种非线性结构，由一个根节点和若干个子树组成，每个子树又是一棵树，分为二叉树、平衡二叉树、二叉搜索树、红黑树、B树、B+树等"},{"type":"list_item","depth":3,"payload":{"lines":[29,30]},"content":"图：一种非线性结构，由顶点集合和边集合组成，表示多对多的关系，分为有向图、无向图、加权图、连通图等"},{"type":"list_item","depth":3,"payload":{"lines":[30,31]},"content":"堆：一种特殊的完全二叉树，满足堆序性质，即父节点的值大于或等于（小于或等于）子节点的值，分为最大堆和最小堆"},{"type":"list_item","depth":3,"payload":{"lines":[31,32]},"content":"散列表：一种根据关键码值直接进行访问的数据结构，通过散列函数将关键码值映射到存储位置，解决冲突的方法有开放定址法、链地址法等"}]}]},{"type":"heading","depth":1,"payload":{"lines":[32,33]},"content":"算法","children":[{"type":"heading","depth":2,"payload":{"lines":[33,34]},"content":"基本概念","children":[{"type":"list_item","depth":3,"payload":{"lines":[34,35]},"content":"算法：对特定问题求解步骤的一种描述，它是指令的有限序列，每条指令表示一个或多个操作"},{"type":"list_item","depth":3,"payload":{"lines":[35,36]},"content":"算法的特性：有穷性、确定性、可行性、输入、输出"},{"type":"list_item","depth":3,"payload":{"lines":[36,37]},"content":"算法设计的目标：正确性、可读性、健壮性、效率与低存储需求"}]},{"type":"heading","depth":2,"payload":{"lines":[37,38]},"content":"算法效率的度量","children":[{"type":"list_item","depth":3,"payload":{"lines":[38,39]},"content":"时间复杂度：算法执行时间与问题规模之间的关系，用大O表示法表示，如O(1)、O(n)、O(logn)、O(nlogn)、O(n^2)等"},{"type":"list_item","depth":3,"payload":{"lines":[39,40]},"content":"空间复杂度：算法执行过程中所需存储空间与问题规模之间的关系，用大O表示法表示，如O(1)、O(n)、O(n^2)等"},{"type":"list_item","depth":3,"payload":{"lines":[40,41]},"content":"算法优化的方法：减少重复计算、减少不必要的计算、改进算法逻辑结构等"}]},{"type":"heading","depth":2,"payload":{"lines":[41,42]},"content":"常用算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[42,43]},"content":"搜索算法：在数据结构中查找特定元素或位置的算法，分为顺序搜索、二分搜索、插值搜索、斐波那契搜索等"},{"type":"list_item","depth":3,"payload":{"lines":[43,44]},"content":"排序算法：在数据结构中按照某种规则或函数重新排列元素的算法，分为冒泡排序、选择排序、插入排序、希尔排序、快速排序、归并排序、堆排序、计数排序、桶排序、基数排序等"},{"type":"list_item","depth":3,"payload":{"lines":[44,45]},"content":"递归算法：在算法中调用自身的算法，分为直接递归和间接递归，需要注意递归出口和递归效率"},{"type":"list_item","depth":3,"payload":{"lines":[45,46]},"content":"分治算法：将一个复杂问题分解成若干个相同或相似的子问题，然后将子问题的解合并得到原问题的解的算法，如二分搜索、归并排序等"},{"type":"list_item","depth":3,"payload":{"lines":[46,47]},"content":"动态规划算法：将一个复杂问题分解成若干个重叠的子问题，然后从最简单的子问题开始求解，并将子问题的解保存起来，避免重复计算，最终得到原问题的解的算法，如斐波那契数列、背包问题等"},{"type":"list_item","depth":3,"payload":{"lines":[47,48]},"content":"贪心算法：在每一步选择中都采取当前状态下最好或最优的选择，从而希望导致结果是最好或最优的算法，如霍夫曼编码、最小生成树等"},{"type":"list_item","depth":3,"payload":{"lines":[48,49]},"content":"回溯算法：在搜索过程中遇到不满足条件的情况时，退回到上一步或若干步重新选择的算法，如八皇后问题、0-1背包问题等"},{"type":"list_item","depth":3,"payload":{"lines":[49,50]},"content":"分支限界算法：在搜索过程中利用限界函数剪去不可能得到最优解的子空间的算法，如旅行商问题、0-1背包问题等"},{"type":"list_item","depth":3,"payload":{"lines":[50,51]},"content":"字符串匹配算法：在一个长字符串中查找一个短字符串出现的位置的算法，分为朴素匹配、KMP算法、BM算法、RK算法等"},{"type":"list_item","depth":3,"payload":{"lines":[51,52]},"content":"数字操作算法：对数字进行各种运算和处理的算法，如进制转换、大数运算、素数判断、最大公约数、最小公倍数等"},{"type":"list_item","depth":3,"payload":{"lines":[52,53]},"content":"其他算法：涉及到特定领域或应用场景的算法，如加密解密、压缩解压、编码解码、图形图像处理、机器学习等"}]}]}]},{"colorFreezeLevel":4})</script>
+</body>
+</html>
